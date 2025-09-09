@@ -24,19 +24,24 @@ The aim of the project is to create a **visual, data-driven analysis tool** that
 - **Power Query** – Data cleaning & transformation  
 
 ---
-
+ 
 ## 📊 Dataset Information  
 The dataset includes the following fields:  
-| Column | Description |  
-|--------|-------------|  
-| Constituency | Parliamentary constituency name |  
-| State | State name |  
-| Winner Party | Party winning the seat |  
-| Trailing Party | Runner-up party |  
-| Winning Margin % | % difference between winner & runner-up |  
-| Winner Candidate | Name of elected candidate |  
-| Total Votes | Number of votes polled |  
-| NOTA Votes | Votes under “None of the Above” |  
+
+| Column             | Description |
+|--------------------|-------------|
+| election_year      | Year of the election |
+| state_name         | Name of the state |
+| constituency_name  | Name of the parliamentary constituency |
+| constituency_type  | Type of constituency (General/SC/ST) |
+| party_name         | Political party name |
+| candidate_name     | Name of the contesting candidate |
+| EVM_votes          | Votes polled via Electronic Voting Machines |
+| postal_votes       | Votes polled via postal ballots |
+| total_votes        | Combined votes (EVM + postal) |
+| rank               | Candidate rank in the constituency (1 = winner) |
+| units              | Vote unit counts / standard measure |
+
 
 ---
 
